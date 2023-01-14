@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="max-width: 1400px;">
     <v-overlay :value="isLoading">
       <v-progress-circular indeterminate size="64"></v-progress-circular>
     </v-overlay>
@@ -23,7 +23,7 @@
       <v-col cols="12" v-if="errorMessage">
         <Alert :text="errorMessage" type="error"></Alert>
       </v-col>
-      <v-col cols="12" v-for="artist in data.artist" :key="artist.mbid">
+      <v-col xl="6" lg="6" md="12" sm="12" cols="12" v-for="artist in data.artist" :key="artist.mbid">
         <ArtistCard :artistName="artist.name" :artistDisambiguation="artist.disambiguation" :artistMbid="artist.mbid"></ArtistCard>
       </v-col>
     </v-row>

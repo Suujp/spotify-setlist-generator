@@ -9,7 +9,7 @@
       <v-container>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title class="title">メニュー</v-list-item-title>
+            <v-list-item-title class="title">MENU</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -43,17 +43,17 @@ export default {
       drawer: null,
       items: [
         {
-          name: 'ホーム',
+          name: 'HOME',
           icon: 'mdi-home',
           link: '/'
         },
         {
-          name: '検索',
+          name: 'SEARCH',
           icon: 'mdi-magnify',
           link: '/search'
         },
         {
-          name: 'プレイリスト',
+          name: 'PLAYLIST',
           icon: 'mdi-play',
           link: '/playlist'
         }
