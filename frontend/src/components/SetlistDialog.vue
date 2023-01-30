@@ -168,7 +168,7 @@ export default {
       });
 
       for (let i = 0; i < selectedSongs.length; i++) {
-        const track = `track:${selectedSongs[i]}`;
+        const track = selectedSongs[i];
         const artist = `artist:${this.artistName}`;
         const params = new URLSearchParams({
           q: track + ' ' + artist,
